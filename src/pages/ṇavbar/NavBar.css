@@ -1,0 +1,182 @@
+.navigation {
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    background-color: #870046;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-divider{
+/* margin-bottom:8rem; */
+}
+
+/* .page-content {
+    padding-top: 8rem;
+} */
+
+.brand-name {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin-left: 4rem;
+    height: 80px;
+    width: 80px;
+}
+
+.brand-name img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.navigation-menu {
+    margin-left: auto;
+}
+
+.navigation-menu ul {
+    display: flex;
+    margin-right: 4rem;
+    padding: 0;
+}
+
+.navigation-menu li {
+    list-style-type: none;
+    margin: 0 1.2rem;
+    font-size: 25px;
+}
+
+.navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+.hamburger {
+    border: 0;
+    height: 50px;
+    width: 50px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.hamburger:hover {
+    background-color: black;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.8rem;
+}
+
+p {
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+}
+
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+
+    100% {
+        background-position-x: 500%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+.navigation{
+height: 6rem;
+}
+/* .page-content {
+    padding-top: 6rem;
+} */
+.nav-divider {
+    /* margin-bottom: 6rem; */
+}
+    .hamburger {
+        display: block;
+    }
+
+    .welcome-text {
+        display: none;
+    }
+
+    .navigation-menu ul {
+        display: none;
+    }
+
+    .navigation-menu ul {
+        position: absolute;
+        top: 96px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: #3C4049;
+        border-top: 1px solid black;
+    }
+
+    .navigation-menu li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .navigation-menu li a {
+        color: black;
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    .navigation-menu li:hover {
+        background-color: #eee;
+
+    }
+
+    .brand-name {
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        margin-left: 1rem;
+        height: 60px;
+        width: 60px;
+    }
+
+    .navigation-menu ul {
+        dipslay: none;
+    }
+
+    .navigation-menu.expanded ul {
+        display: block;
+    }
+
+}

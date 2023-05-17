@@ -1,0 +1,85 @@
+:root {
+  --header-height: 80px;
+  --sidemenu-width: 280px;
+
+  --white-color: #ffffff;
+
+  --black-color: #000000;
+
+  --primary-theme-color: #323a44;
+
+  --primary-grey-color: #e4e4e4;
+
+  --secondary-grey-color: #929292;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+scroll-behavior: smooth;
+}
+
+
+
+/* FONT FACE FOR ALBERT_SANS */
+@font-face {
+  font-family: "AlbertSans-Regular";
+  src: url("./assets/fonts/AlbertSans/static/AlbertSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "AlbertSans-Bold";
+  src: url("./assets/fonts/AlbertSans/static/AlbertSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "AlbertSans-Medium";
+  src: url("./assets/fonts/AlbertSans/static/AlbertSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "AlbertSans-Light";
+  src: url("./assets/fonts/AlbertSans/static/AlbertSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "AlbertSans-SemiBold";
+  src: url("./assets/fonts/AlbertSans/static/AlbertSans-SemiBold.ttf");
+}
+
+/* FONT FACE FOR DIN_PRO */
+@font-face {
+  font-family: "DINPro-Medium";
+  src: url("./assets/fonts/DINPro/DIN\ Pro\ Medium\ 500.otf");
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "AlbertSans-Regular", sans-serif;
+  font-size: 100%;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: var(--white-color) !important;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  height: 100vh;
+  min-height: 100vh;
+}

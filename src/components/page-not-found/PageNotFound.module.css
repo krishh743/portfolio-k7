@@ -1,0 +1,19 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container img {
+  object-fit: contain;
+}
+
+.container h1 {
+  font-size: 3.75rem;
+}
+
+.container h2 {
+  margin-top: 20px;
+}

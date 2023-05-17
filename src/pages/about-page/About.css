@@ -1,0 +1,246 @@
+h2 {
+    font-family: sans-serif;
+    /* color: #228B22; */
+    text-align: center;
+    font-size: 2.4rem;
+    max-width: 550px;
+    position: relative;
+}
+
+h2:before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: #870046;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: #870046;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.about-heading {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.about-heading-1 {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0;
+    /* margin-block: 40px; */
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-inline: 10vh;
+    column-gap: 40px;
+}
+
+.row-image {
+    width: 60%;
+    height: 60%;
+    text-align: center;
+}
+
+.row-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+}
+
+.image-two {
+    width: 100%;
+    height: 100%;
+}
+
+.image-two img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-section span {
+    font-size: 1.3rem;
+    /* color: white; */
+    width: 100%;
+    height: 100%;
+}
+
+.image-two-clg img {
+    border-radius: 2%;
+}
+
+.content-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.image-section1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-inline: 10vh;
+    column-gap: 40px;
+}
+
+.address-section {
+    /* background-color: #3C4049; */
+    padding: 0 70px 70px 70px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+padding: 10vh;
+}
+.container-reverse{
+display: flex;
+flex-direction:row-reverse;
+flex-wrap: wrap;
+    padding: 10vh;
+}
+.image-container {
+  flex: 0 0 30%; /* Adjust the width of the image container */
+}
+.image-container-reverse {
+    flex: 0 0 35%;
+}
+.image-container,.image-container-reverse, img {
+  width: 100%;
+  height: auto;
+border-radius: 2%;
+}
+
+.content-container {
+  flex: 0 0 65%; /* Adjust the width of the content container */
+padding: 8vh;
+}
+
+
+@media (max-width: 768px) {
+  .image-container,
+  .content-container {
+    flex: 0 0 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-heading {
+        font-size: 1.2rem;
+        color: #3d0523;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .image-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row-image {
+        width: 200% !important;
+        height: auto;
+        text-align: center;
+    }
+
+    .row-image img {
+        height: 100%;
+        width: 100%;
+        border-radius: 2%;
+    }
+
+    .content-section {
+        width: 200%;
+        height: 100%;
+        text-align: left;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
+.about-heading-1{
+font-size: 1.2rem;
+    color: #3d0523;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.content-section1{
+width: 100%;
+}
+.container,.content-container,.container-reverse{
+padding: 0;
+margin:0;
+}
+
+.image-container {
+    flex: 0 0 110%;
+}
+
+.content-container {
+    flex: 0 0 100%;
+}
+
+.image-container-reverse{
+    flex: 0 0 100%;
+}
+
+.detailss,.content-section span{
+font-size: 1rem;
+/* text-align: center !important; */
+/* color: white; */
+/* line-height:0 !important; */
+display: block;
+    width: 100%;
+    padding: 10px;
+}
+    h2 {
+        text-align: center;
+        font-size: 2rem !important;
+        margin: 0 !important;
+    }
+
+    h2:before {
+        display: none !important;
+    }
+
+    h2:after {
+        display: none !important;
+    }
+}

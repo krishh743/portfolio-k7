@@ -1,0 +1,15 @@
+.footer-mobile {
+    display: none;
+}
+.footer-desktop {
+    display: block;
+}
+
+@media only screen and (max-width: 767px) {
+.footer-mobile{
+display: block;
+}
+.footer-desktop {
+    display: none;
+}
+}

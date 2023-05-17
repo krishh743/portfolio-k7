@@ -1,0 +1,131 @@
+.carouselContainer .carouselCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5px;
+    text-align: center;
+    outline: none;
+}
+
+.carouselContainer .carouselCard img {
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.carouselContainer .carouselCard .priceCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselContainer .carouselCard .priceCont .originalPrice {
+    margin-left: 5px;
+    text-decoration: line-through;
+}
+
+.carouselContainer .mediumText {
+    font-size: 26px;
+color:white;
+}
+
+.carouselContainer .smallText {
+    font-size: 18px;
+    padding-block: 1vh;
+    padding-inline: 1vw;
+color: white;
+}
+
+.carouselContainer .arrow {
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-70%);
+    font-size: 32px;
+    color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    z-index: 5;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    line-height: 1px;
+    transition: 0.25s ease-in-out;
+}
+
+.carouselContainer .arrow.left {
+    left: -80px;
+}
+
+.carouselContainer .arrow.right {
+    right: -50px;
+}
+
+.carouselContainer:hover .arrow {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+    .carouselContainer .mediumText {
+        font-size: 24px;
+    }
+
+    .carouselContainer .arrow {
+        opacity: 1;
+        height: 15%;
+        width: auto;
+        padding-inline: 5px;
+        border-radius: 0;
+        font-size: 2.3vw;
+        background-color: rgb(0 0 0 / 60%);
+        color: white;
+    }
+
+    .carouselContainer .arrow.left {
+        left: 5px;
+    }
+
+    .carouselContainer .arrow.right {
+        right: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .carouselContainer .mediumText {
+        font-size: 22px;
+    }
+
+    .carouselContainer .smallText {
+        font-size: 16px;
+    }
+
+    .carouselContainer .arrow {
+        font-size: 3vw;
+        height: 10%;
+/* opacity: 1; */
+    }
+.carouselContainer .arrow.left {
+    left: -30px;
+}
+
+.carouselContainer .arrow.right {
+    right: -30px;
+}
+.carouselContainer svg{
+height: 40px;
+}
+}
+
+/* @media only screen and (max-width: 500px) {
+    .carouselContainer .arrow {
+        font-size: 5vw;
+    }
+
+    .carouselContainer .mediumText {
+        font-size: 18px;
+    }
+  .carouselContainer .arrow {
+      font-size: 3vw;
+  }
+} */
