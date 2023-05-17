@@ -28,13 +28,13 @@ function Home() {
                 Hi, Im Krishna Kumar Kushwaha
               </span>
             </Stack>
-              <Stack>
-<Slide>
+            <Stack>
+              <Slide>
                 <span className={styles["home-second-text"]}>
                   Software Engineer
                 </span>
-</Slide>
-              </Stack>
+              </Slide>
+            </Stack>
             <Fade delay={800}>
               <Stack direction={"column"}>
                 <span className={styles["home-third-text"]}>
@@ -98,30 +98,6 @@ function Home() {
             </div>
           </div>
         </div>
-        {/* <div className={styles["home-address"]}>
-          <ul
-            className={styles[""]}
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              listStyleType: "none",
-            }}
-          >
-            <li>
-              <a href="#">hkd</a>
-            </li>
-            <li>
-              <a href="#">hkd</a>
-            </li>
-            <li>
-              <a href="#">hkd</a>
-            </li>
-            <li>
-              <a href="#">hkd</a>
-            </li>
-          </ul>
-        </div> */}
       </div>
     </div>
   );
