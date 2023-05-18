@@ -15,6 +15,10 @@ background-color: #433c61;
 background-color: #870047;
 }
 
+.btn-submit:hover{
+background-color: #870047 !important;
+}
+
 .form-body {
     background-color: white;
     width: 60%;

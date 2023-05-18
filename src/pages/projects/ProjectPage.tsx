@@ -91,7 +91,7 @@ function ProjectPage() {
                       },
                     }}
                   >
-                    <Button className="secondary-btn"></Button>
+                    <Button className="secondary-btn">View Live</Button>
                     <Button className="secondary-btn">Source</Button>
                   </Stack>
                 </div>
@@ -126,11 +126,11 @@ function ProjectPage() {
                     {item.heading}
                   </span>
                   <br />
-                    <Slide direction="left">
-                  <span className={styles["project-details"]}>
-{item.description}
-                  </span>
-</Slide>
+                  <Slide direction="left">
+                    <span className={styles["project-details"]}>
+                      {item.description}
+                    </span>
+                  </Slide>
                   <Stack
                     justifyContent="center"
                     spacing={4}

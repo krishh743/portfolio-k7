@@ -13,6 +13,11 @@ const FormFieldContainer = (props: ReactNodeProps) => {
       // mb={"1.5rem"}
       // border={`1px solid ${theme.palette.grey[800]}`}
       // borderRadius={"0.4rem"}
+      sx={{
+        "@media (max-width:768px)": {
+          fontSize: "1.4rem"
+        },
+      }}
       component={"section"}
       padding={"1.5rem"}
       textAlign={"center"}

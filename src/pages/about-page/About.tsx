@@ -50,9 +50,9 @@ function About() {
               </div>
               <div className="content-section">
                 <div className="image-two">
-                  <Zoom>
+                  <Slide direction="right">
                     <img src={item.image2} alt="" />
-                  </Zoom>
+                  </Slide>
                 </div>
                 <Slide direction="down">
                   <span className="detailss">{item.details}</span>

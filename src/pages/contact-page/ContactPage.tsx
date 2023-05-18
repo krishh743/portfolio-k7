@@ -249,7 +249,7 @@ function ContactPage(): JSX.Element {
         </div>
         <div className={styles["my-loaction"]}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.201997458564!2d77.6123637757946!3d12.894729016557532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14db8aa374c5%3A0xaa220f9c20c0c2b6!2sNew%20Arvind%20Memorial%20English%20School!5e0!3m2!1sen!2sin!4v1683577703400!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1798.1859358498932!2d83.67599009999999!3d25.6589647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399203baea01afad%3A0x8351afe10cae0e2f!2sHanuman%20Temple!5e0!3m2!1sen!2sin!4v1684340642649!5m2!1sen!2sin"
             loading="lazy"
           ></iframe>
         </div>

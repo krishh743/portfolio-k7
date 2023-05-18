@@ -17,13 +17,18 @@ import Empro1 from "../assets/images/emproto1.jpg"
 import Empro2 from "../assets/images/emprot2.jpg";
 import Collage1 from "../assets/images/krishnaambalika1.jpg"
 import Collage2 from "../assets/images/krishnambalika2.jpg";
+import hoabl from "../assets/images/hoabl.png";
+import crud from "../assets/images/crud.png";
+import wiki from "../assets/images/wikki.png";
+import port from "../assets/images/port.png";
+
 
 
 export const professionalProject = [
   {
-    heading: "SEKERON",
-    image: Sekeron,
-    hoverText: "krishna",
+    heading: "HOABL",
+    image: hoabl,
+    hoverText: "HOABL",
     techStack: "Reactjs,Typescript,Html,Css,Nodejs,Git,Material UI,Jira",
     description:
       "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
@@ -31,22 +36,21 @@ export const professionalProject = [
   {
     heading: "IndusInd Bank",
     image: IndusInd,
-    hoverText: "krishna",
-
+    hoverText: "IndusInd Bank",
     description:
       "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
   },
   {
     heading: "Jaypore",
     image: Jaypore,
-    hoverText: "krishna",
+    hoverText: "Jaypore",
 
     description:
       "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
   },
   {
-    heading: "Jaypore",
-    image: Jaypore,
+    heading: "SEKERON",
+    image: Sekeron,
     hoverText: "krishna",
 
     description:
@@ -57,24 +61,24 @@ export const professionalProject = [
 export const personalProject = [
   {
     heading: "Wikipedia Search Application",
-    image: Jaypore,
-    hoverText: "krishna",
+    image: wiki,
+    hoverText: "Wikipedia Application",
 
     description:
       "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
   },
   {
     heading: "Crud Operation Appication",
-    image: Jaypore,
-    hoverText: "krishna",
+    image: crud,
+    hoverText: "Crud Operation",
 
     description:
       "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
   },
   {
-    heading: "Covid App",
-    image: Jaypore,
-    hoverText: "krishna",
+    heading: "My Website",
+    image: port,
+    hoverText: "Portfolio",
 
     description:
       "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",

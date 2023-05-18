@@ -177,6 +177,7 @@ height: 6rem;
 
     .navigation-menu.expanded ul {
         display: block;
+background-color: #433c61;
     }
 
 }
