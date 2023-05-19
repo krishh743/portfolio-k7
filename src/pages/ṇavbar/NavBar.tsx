@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import "./NavBar.css";
 import Logo from "../../assets/images/krishna_logo.png";
 import {Link, useLocation} from "react-router-dom";
+import {portfolioData} from "resources/cms";
 
 export default function Navbar() {
   const location = useLocation();
@@ -42,19 +43,19 @@ export default function Navbar() {
         >
           <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/home">{portfolioData.HOME}</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">{portfolioData.ABOUT}</Link>
             </li>
             <li>
-              <Link to="/projectpage">Projects</Link>
+              <Link to="/projectpage">{portfolioData.PROJECT}</Link>
             </li>
             <li>
-              <Link to="/skillpage">Skills</Link>
+              <Link to="/skillpage">{portfolioData.SKILLS}</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">{portfolioData.CONTACT}</Link>
             </li>
           </ul>
         </div>

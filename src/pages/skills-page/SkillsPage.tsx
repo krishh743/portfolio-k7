@@ -7,10 +7,11 @@ import styles from "./SkillsPage.module.css";
 import CarouselPage from "components/carousel/CarouselPage";
 import Carousel from "components/carouselComponent/carousel";
 import {carouselData} from "./CarouselData";
-import FormFieldContainer from "components/form-field-container/FormFieldContainer";
-import {Slide, Zoom} from "react-awesome-reveal";
+import {Slide} from "react-awesome-reveal";
+import {portfolioData} from "resources/cms";
 
-function SkillsPage() {
+const SkillsPage = () => {
+// function SkillsPage() {
   return (
     <>
       <div
@@ -21,7 +22,7 @@ function SkillsPage() {
           color: "white",
         }}
       >
-        My Skills
+        {portfolioData.mySkills}
       </div>
       <div className={styles["card-container"]}>
         {skillsData.map((item, index) => (
@@ -47,11 +48,8 @@ function SkillsPage() {
         ))}
       </div>
       <div className={styles.giftCarousel}>
-        <h2>Certifications</h2>
-        {/* <Slide delay={400} direction="right"> */}
-
+        <h2>{portfolioData.certificate}</h2>
         <Carousel singleCarousel={false} carouselData={carouselData} />
-        {/* </Slide> */}
       </div>
     </>
   );

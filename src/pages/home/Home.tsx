@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 import KKK from "../../assets/images/kkk.jpg";
 import {Button, Stack} from "@mui/material";
 import {Fade, Slide} from "react-awesome-reveal";
+import {portfolioData} from "resources/cms";
 const resume = require("../../assets/resume.pdf");
 const homevideo = require("../../assets/video/homevideo.mp4");
 const homevideo2 = require("../../assets/video/bg2.mp4");
@@ -25,27 +26,26 @@ function Home() {
           <Stack direction={"column"} spacing={4}>
             <Stack>
               <span className={styles["home-first-text"]}>
-                Hi, Im Krishna Kumar Kushwaha
+                {portfolioData.Name}
               </span>
             </Stack>
             <Stack>
               <Slide>
                 <span className={styles["home-second-text"]}>
-                  Software Engineer
+                  {portfolioData.role}
                 </span>
               </Slide>
             </Stack>
             <Fade delay={800}>
               <Stack direction={"column"}>
                 <span className={styles["home-third-text"]}>
-                  A passionate Software Engineer 🚀 having an experience of
-                  building Web and
+                  {portfolioData.objective1}
                 </span>
                 <span className={styles["home-third-text"]}>
-                  Mobile applications with JavaScript / Reactjs / Nodejs
+                  {portfolioData.objective2}
                 </span>
                 <span className={styles["home-third-text"]}>
-                  / React Native and some other cool libraries and frameworks.{" "}
+                  {portfolioData.objective3}
                 </span>
               </Stack>
             </Fade>
@@ -55,23 +55,20 @@ function Home() {
               value="download"
               onClick={downloadResume}
             >
-              Download CV
+              {portfolioData.btnText}
             </Button>
           </Stack>
         </div>
         <div className={styles["contents-only-mobile"]}>
           <div>
-            <span style={{fontSize: "40px"}}>Hi ,</span>
-            {/* <span style={{fontSize: "20px"}}>I'm Krishna Kumar (KK) </span> */}
+            <span style={{fontSize: "40px"}}>{portfolioData.Hi}</span>
           </div>
           <div className={styles["line"]}>
-            <h2 className={styles["flipY"]}>I'm Krishna Kumar (KK) </h2>
+            <h2 className={styles["flipY"]}>{portfolioData.nameForMobile}</h2>
           </div>
           <div>
             <span style={{fontSize: "1rem", fontWeight: "bold"}}>
-              A passionate Frontend Developer 🚀 having an experience of
-              building Web and Mobile applications with JavaScript / Reactjs /
-              Nodejs/ React Native and some other cool libraries and frameworks.
+              {portfolioData.objectiveMob}
             </span>
           </div>
           <div
@@ -87,7 +84,7 @@ function Home() {
               value="download"
               onClick={downloadResume}
             >
-              Download CV
+              {portfolioData.btnText}
             </Button>
           </div>
         </div>
@@ -98,7 +95,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>    
+      </div>
     </div>
   );
 }

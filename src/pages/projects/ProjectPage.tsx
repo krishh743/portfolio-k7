@@ -1,11 +1,7 @@
-import {useEffect} from "react";
 import FormFieldContainer from "components/form-field-container/FormFieldContainer";
 import {
   Button,
-  CardActionArea,
-  CardActions,
   Stack,
-  Typography,
 } from "@mui/material";
 import styles from "./ProjectPage.module.css";
 import {personalProject, professionalProject} from "pages/Data";
@@ -13,7 +9,8 @@ import {experimentalStyled as styled} from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import {Slide, Zoom} from "react-awesome-reveal";
+import {Slide} from "react-awesome-reveal";
+import {portfolioData} from "resources/cms";
 
 const Item = styled(Paper)(({theme}) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "white",
@@ -48,7 +45,8 @@ const OverlayText = styled("span")({
   fontWeight: "bold",
 });
 
-function ProjectPage() {
+const ProjectPage = () => {
+// function ProjectPage() {
   return (
     <div className={styles["project-body"]}>
       <FormFieldContainer children={"Professional Projects"} />
@@ -91,8 +89,12 @@ function ProjectPage() {
                       },
                     }}
                   >
-                    <Button className="secondary-btn">View Live</Button>
-                    <Button className="secondary-btn">Source</Button>
+                    <Button className="secondary-btn">
+                      {portfolioData.viewBtn}
+                    </Button>
+                    <Button className="secondary-btn">
+                      {portfolioData.sourceBtn}
+                    </Button>
                   </Stack>
                 </div>
               </Item>
@@ -142,8 +144,12 @@ function ProjectPage() {
                       },
                     }}
                   >
-                    <Button className="secondary-btn">View Live</Button>
-                    <Button className="secondary-btn">Source</Button>
+                    <Button className="secondary-btn">
+                      {portfolioData.viewBtn}
+                    </Button>
+                    <Button className="secondary-btn">
+                      {portfolioData.sourceBtn}
+                    </Button>
                   </Stack>
                 </div>
               </Item>

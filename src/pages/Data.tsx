@@ -21,6 +21,7 @@ import hoabl from "../assets/images/hoabl.png";
 import crud from "../assets/images/crud.png";
 import wiki from "../assets/images/wikki.png";
 import port from "../assets/images/port.png";
+import next from "../assets/images/next.png";
 
 
 
@@ -31,30 +32,28 @@ export const professionalProject = [
     hoverText: "HOABL",
     techStack: "Reactjs,Typescript,Html,Css,Nodejs,Git,Material UI,Jira",
     description:
-      "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
+      "This was my First Project (Feb 2022 to june 2022) and kind of real state project in which customer can sale and buy their plots and lands. here i was working in admin module and this admin module manage by only project owner and there is admin and super admin can manages this application.",
   },
   {
     heading: "IndusInd Bank",
     image: IndusInd,
     hoverText: "IndusInd Bank",
     description:
-      "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
+      "This was my Second Porject (june 2022 to march 2023). it is from IndusInd Bank project here they will provide many kind of loans like Car Loan, Bike Loan, Used Car Loan, Refinance and aggregator also providing by Bank. Here is login page and addresses ,verifications of pan, email, and banks accounts, steppers for application progress. here is also admin module handle by bank executives.",
   },
   {
     heading: "Jaypore",
     image: Jaypore,
     hoverText: "Jaypore",
-
     description:
-      "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
+      "I was worked in this project during second project (IndusInd Bank), approximatly 1 months 15 days and This is kind E-commerce website only static pages i was developed and here people can buy facy dresses and traditional clothes for mens and womens also. here is so many categories for shoping and login and signup page for customers spaces to handle profile and shopping details.",
   },
   {
     heading: "SEKERON",
     image: Sekeron,
     hoverText: "krishna",
-
     description:
-      "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
+      "Sekeron is my 4th one project currently i an working now,this is kind of social media application where poeple can share post , images , video also like Instagram. here i  am working in admin module application in which login page, sign up page, customer management ,project management ,settings, blog management, FAQ, etc. ",
   },
 ];
 
@@ -63,25 +62,22 @@ export const personalProject = [
     heading: "Wikipedia Search Application",
     image: wiki,
     hoverText: "Wikipedia Application",
-
     description:
-      "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
+      "This is my personal project where user can search any blogs or key point and result will show below that is sets of suggestion related to user input and if user click/choose any result it will hit and redirect to wikipedia page as response. i was took one week for this project.",
   },
   {
     heading: "Crud Operation Appication",
     image: crud,
     hoverText: "Crud Operation",
-
     description:
-      "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
+      "It is application where user can create, delete, view, update/edit data in table. i took 2 week for this application by using react and redux.",
   },
   {
     heading: "My Website",
     image: port,
     hoverText: "Portfolio",
-
     description:
-      "loremendjkfkkkkkkkkkkkkwenfkjenkjnfdmvd,vd vm,dm,vm,d,v m,dngnekjnf, dcmds,nfkr ekvrejtoierjiofjdlkmklvdfjlgjrejgdvn,nv,  iuioeuiotuerotuer tiureioutierteor iuioweu t4vtie w ietieoiteteutre ritoretreoutourotreopt repoitreopitoreitoreitreopt reoptireopitoreitoreit otireotireopiterot oitopreiteoritorep opireoptireopitopreitp",
+      "This is my latest project, duration i developed (3 Week). Here anyone can know about me and my all eduactional, experiences, skills ,contact information. and also contact me by socail media plateforms.",
   },
 ];
 
@@ -130,7 +126,10 @@ export const skillsData = [
     image: Git,
     skillName: "GIT",
   },
-
+  {
+    image: next,
+    skillName: "Nextjs",
+  },
 ];
 
 export const aboutDetailsRows1 = [

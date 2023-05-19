@@ -17,8 +17,10 @@ import {
   Slide,
   Zoom,
 } from "react-awesome-reveal";
+import {portfolioData} from "resources/cms";
 
-function About() {
+// function About() {
+const About = () =>{
 
   return (
     <>
@@ -36,12 +38,12 @@ function About() {
           }}
         >
           <Rotate>
-            <h2>About</h2>
+            <h2>{portfolioData.ABOUT}</h2>
           </Rotate>
         </div>
         {aboutDetailsRows1.map((item, index) => (
           <>
-            <div className="about-heading">1. Professional Experience</div>
+            <div className="about-heading">{portfolioData.experience1}</div>
             <div className="image-section" key={index}>
               <div className="row-image">
                 <Slide>
@@ -70,7 +72,7 @@ function About() {
                 </Slide>
               </div>
               <div className="content-container">
-                <div className="about-heading-1">2. Graduation (2017-2021)</div>
+                <div className="about-heading-1">{portfolioData.experience2}</div>
                 <Slide direction="right">
                   <span className="detailss">{item.details}</span>
                 </Slide>
@@ -83,13 +85,11 @@ function About() {
           <>
             <div className="container-reverse">
               <div className="image-container-reverse">
-                {/* <Zoom> */}
                   <img alt="" src={item.image} />
-                {/* </Zoom> */}
               </div>
               <div className="content-container">
                 <div className="about-heading-1">
-                  2. Intermediate (2012-2017)
+                 {portfolioData.experience3}
                 </div>
                 <Slide direction="left">
                   <span className="detailss">{item.details}</span>

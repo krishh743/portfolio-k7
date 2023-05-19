@@ -106,9 +106,9 @@ const CarouselSlideItem: React.FC<CarouselSlideItemProps> = ({
 const keys = Array.from(Array(_items.length).keys());
 
 const CarouselPage = () => {
-  const [items, setItems] = React.useState(keys);
-  const [isTicking, setIsTicking] = React.useState(false);
-  const [activeIdx, setActiveIdx] = React.useState(0);
+  const [items, setItems] = useState(keys);
+  const [isTicking, setIsTicking] = useState(false);
+  const [activeIdx, setActiveIdx] = useState(0);
   const bigLength = items.length;
 
   const prevClick = (jump = 1) => {
@@ -120,6 +120,7 @@ const CarouselPage = () => {
     }
   };
 
+
   const nextClick = (jump = 1) => {
     if (!isTicking) {
       setIsTicking(true);
@@ -129,11 +130,11 @@ const CarouselPage = () => {
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isTicking) sleep(300).then(() => setIsTicking(false));
   }, [isTicking]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setActiveIdx((length - (items[0] % length)) % length) // prettier-ignore
   }, [items]);
 

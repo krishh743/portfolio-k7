@@ -49,7 +49,6 @@ function App() {
         <Route path="/projectpage"  />
         <Route path="/skillpage" />
         <Route path="/contact"  />
-        {/* <Route path="*" element={<PageNotFound />} /> */}
       </Routes>
       <Footer />
     </ThemeProvider>

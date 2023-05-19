@@ -9,6 +9,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 import {Fade} from "react-awesome-reveal";
+import {isEmailValid} from "utils/ValidationUtils";
+import {portfolioData} from "resources/cms";
 
 interface FormData {
   firstName: string;
@@ -25,7 +27,7 @@ interface FormData {
   };
 }
 
-function ContactPage(): JSX.Element {
+const ContactPage = () =>{
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -53,27 +55,30 @@ function ContactPage(): JSX.Element {
     };
 
     if (!formData.firstName.trim()) {
-      errors.firstName = "First name is required";
+      errors.firstName = "First name is required!";
     }
 
     if (!formData.lastName.trim()) {
-      errors.lastName = "Last name is required";
+      errors.lastName = "Last name is required!";
     }
 
     if (!formData.email.trim()) {
-      errors.email = "Email is required";
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      errors.email = "Invalid email format";
+      errors.email = "Email is required!";
+    } else if (isEmailValid(formData.email)
+    ) {
+      errors.email = "Invalid email format!";
     }
 
     if (!formData.mobileNumber.trim()) {
-      errors.mobileNumber = "Mobile number is required";
-    } else if (!/^[0-9]{10}$/.test(formData.mobileNumber)) {
-      errors.mobileNumber = "Invalid mobile number";
+      errors.mobileNumber = "Mobile number is required!";
+    } else if (
+      /^((?!(0))[0-9]{10})$/.test(formData.mobileNumber)
+    ) {
+      errors.mobileNumber = "Invalid mobile number!";
     }
 
     if (!formData.message.trim()) {
-      errors.message = "Message is required";
+      errors.message = "Message is required!";
     }
 
     setFormData({...formData, errors});
@@ -87,18 +92,18 @@ function ContactPage(): JSX.Element {
         message: formData.message,
       };
 
+// email messaging services
       emailjs
         .send(
-          "service_a31zemv",
-          "template_ywf8axd",
+          "service_a31zemv",//service id
+          "template_ywf8axd",//templates id
           submittedData,
-          "wVten6qByzC-uShOr"
+          "wVten6qByzC-uShOr"//account id
         )
         .then(
           (response) => {
             console.log("Email sent successfully!", response);
             toast.success("Email sent successfully!");
-
             resetForm();
           },
           (error) => {
@@ -138,10 +143,10 @@ function ContactPage(): JSX.Element {
               <span className={styles["contact-text"]}>Contact</span>
             </Stack>
             <Stack>
-              <span style={{fontSize: "1.4rem"}}>Feel Free To Contact Us.</span>
+              <span className={styles["contact-subtext"]} >Feel Free To Contact Us.</span>
             </Stack>
             <form onSubmit={handleSubmit}>
-              <div style={{width: "80vh"}} className={styles["form-fields"]}>
+              <div className={styles["form-fields"]}>
                 <Stack
                   flexDirection={"row"}
                   spacing={{xs: 2, sm: 10}}
@@ -239,7 +244,7 @@ function ContactPage(): JSX.Element {
                     className={styles["btn-submit"]}
                     onClick={handleButtonClick}
                   >
-                    Send Message
+                    {portfolioData.sendBtn}
                   </Button>
                   <ToastContainer />
                 </Stack>
@@ -255,7 +260,7 @@ function ContactPage(): JSX.Element {
         </div>
       </div>
       <div className={styles["address-section"]}>
-        <div className={styles["about-heading-1"]}>Address</div>
+        <div className={styles["about-heading-1"]}>{portfolioData.address}</div>
         <Stack
           flexDirection={"row"}
           sx={{
@@ -272,9 +277,9 @@ function ContactPage(): JSX.Element {
             <Stack flexDirection={"column"}>
               <RoomIcon sx={{color: "#FF0000", fontSize: "35px"}} />
               <Stack flexDirection={"row"} whiteSpace={"nowrap"}>
-                <span className={styles["address-key"]}>Address:</span>
+                <span className={styles["address-key"]}>{portfolioData.address1}</span>
                 <span className={styles["address-value"]}>
-                  Ghazipur, Nonhara,233303 U.P
+                  {portfolioData.addressData}
                 </span>
               </Stack>
             </Stack>
@@ -282,9 +287,9 @@ function ContactPage(): JSX.Element {
               <Stack flexDirection={"column"}>
                 <PhoneIcon sx={{color: "blue", fontSize: "35px"}} />
                 <Stack flexDirection={"row"}>
-                  <span className={styles["address-key"]}>Phone:</span>
+                  <span className={styles["address-key"]}>{portfolioData.phone}</span>
                   <span className={styles["address-value"]}>
-                    +91 9118575852
+                    {portfolioData.phoneData}
                   </span>
                 </Stack>
               </Stack>
@@ -293,20 +298,20 @@ function ContactPage(): JSX.Element {
               <Stack flexDirection={"column"}>
                 <EmailIcon sx={{color: "blue", fontSize: "35px"}} />
                 <Stack flexDirection={"row"}>
-                  <span className={styles["address-key"]}>Email:</span>
+                  <span className={styles["address-key"]}>{portfolioData.email}</span>
                   <span className={styles["address-value"]}>
-                    krishnakushwaha743@gmail.com
+                    {portfolioData.emailData}
                   </span>
-                </Stack>{" "}
+                </Stack>
               </Stack>
             </Stack>
             <Stack>
               <Stack flexDirection={"column"}>
                 <LanguageIcon sx={{color: "blue", fontSize: "35px"}} />
                 <Stack flexDirection={"row"}>
-                  <span className={styles["address-key"]}>Website:</span>
+                  <span className={styles["address-key"]}>{portfolioData.website}</span>
                   <span className={styles["address-value"]}>
-                    www.example.com
+                    {portfolioData.websiteLink}
                   </span>
                 </Stack>
               </Stack>

@@ -10,7 +10,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
-function Copyright() {
+
+const Copyright = () => {
   return (
     <span>
       {"Copyright © "}
@@ -19,7 +20,7 @@ function Copyright() {
   );
 }
 
-export default function StickyFooter() {
+ const  StickyFooter = () => {
   return (
     <>
       <div className={styles["footer-mobile"]}>
@@ -109,3 +110,5 @@ export default function StickyFooter() {
     </>
   );
 }
+
+export default StickyFooter;

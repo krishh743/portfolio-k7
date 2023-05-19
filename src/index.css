@@ -1,16 +1,10 @@
 :root {
-  --header-height: 80px;
-  --sidemenu-width: 280px;
-
   --white-color: #ffffff;
-
   --black-color: #000000;
-
   --primary-theme-color: #323a44;
-
   --primary-grey-color: #e4e4e4;
-
   --secondary-grey-color: #929292;
+  --primary-bg-color: #870047;
 }
 
 *,
@@ -23,7 +17,7 @@
 
 ::-webkit-scrollbar {
   width: 10px;
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 
