@@ -102,8 +102,8 @@ iframe {
     }
 
     .address-value {
-margin-left: 5px;
-color: var(--primary-grey-color)
+        margin-left: 5px;
+        color: var(--primary-grey-color)
     }
 
     .address-key,
