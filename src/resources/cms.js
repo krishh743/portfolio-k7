@@ -30,22 +30,22 @@ export const portfolioData = {
 
     //project page
     viewBtn: "View Live",
-    sourceBtn: "Source",
+    sourceBtn: "Source Code",
 
     //skills page and
     mySkills: "My Skills",
     certificate: "Certifications",
 
     //contact page
-    sendBtn: "Send Message",
-    address: "Address",
-    address1: "Address:",
-    addressData: " Ghazipur, Nonhara,233303 U.P",
-    phone: "Phone :",
-    phoneData: "+91 9118575852",
-    email: "Email :",
-    emailData: "krishnakushwaha743@gmail.com",
-    website: "Website :",
-    websiteLink: "www.example.com"
+    sendBtn: " Send Message",
+    address : " Address",
+    address1 : " Address :",
+    addressData : " Ghazipur, Nonhara,233303 U.P",
+    phone : " Phone :",
+    phoneData : " +91 9118575852",
+    email : " Email :",
+    emailData : " krishnakushwaha743@gmail.com",
+    website : " Website :",
+    websiteLink : " www.example.com"
 }
 

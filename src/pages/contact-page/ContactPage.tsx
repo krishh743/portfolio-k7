@@ -285,7 +285,7 @@ const ContactPage = () =>{
             </Stack>
             <Stack>
               <Stack flexDirection={"column"}>
-                <PhoneIcon sx={{color: "blue", fontSize: "35px"}} />
+                <PhoneIcon sx={{color: "", fontSize: "35px"}} />
                 <Stack flexDirection={"row"}>
                   <span className={styles["address-key"]}>{portfolioData.phone}</span>
                   <span className={styles["address-value"]}>
@@ -296,7 +296,7 @@ const ContactPage = () =>{
             </Stack>
             <Stack>
               <Stack flexDirection={"column"}>
-                <EmailIcon sx={{color: "blue", fontSize: "35px"}} />
+                <EmailIcon sx={{color: "", fontSize: "35px"}} />
                 <Stack flexDirection={"row"}>
                   <span className={styles["address-key"]}>{portfolioData.email}</span>
                   <span className={styles["address-value"]}>
@@ -307,11 +307,11 @@ const ContactPage = () =>{
             </Stack>
             <Stack>
               <Stack flexDirection={"column"}>
-                <LanguageIcon sx={{color: "blue", fontSize: "35px"}} />
+                <LanguageIcon sx={{color: "", fontSize: "35px"}} />
                 <Stack flexDirection={"row"}>
                   <span className={styles["address-key"]}>{portfolioData.website}</span>
                   <span className={styles["address-value"]}>
-                    {portfolioData.websiteLink}
+                  {portfolioData.websiteLink}
                   </span>
                 </Stack>
               </Stack>

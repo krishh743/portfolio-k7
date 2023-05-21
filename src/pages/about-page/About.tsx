@@ -1,42 +1,18 @@
 import React from "react";
-import {Stack} from "@mui/material";
 import "./About.css";
 import {
   aboutDetailsRows,
   aboutDetailsRows1,
   aboutDetailsRowsReverse,
 } from "pages/Data";
-import {useEffect, useRef} from "react";
-import {gsap} from "gsap";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
-import {
-  Fade,
-  Flip,
-  JackInTheBox,
-  Rotate,
-  Slide,
-  Zoom,
-} from "react-awesome-reveal";
+import {Rotate, Slide} from "react-awesome-reveal";
 import {portfolioData} from "resources/cms";
 
-// function About() {
-const About = () =>{
-
+const About = () => {
   return (
     <>
-      <div
-        style={{
-          height: "auto",
-          backgroundColor: "#433c61",
-          padding: "20px",
-          transform: "translateZ(0)",
-        }}
-      >
-        <div
-          style={{
-            textAlign: "center",
-          }}
-        >
+      <div className="about-page">
+        <div className="about-main-heading">
           <Rotate>
             <h2>{portfolioData.ABOUT}</h2>
           </Rotate>
@@ -72,7 +48,9 @@ const About = () =>{
                 </Slide>
               </div>
               <div className="content-container">
-                <div className="about-heading-1">{portfolioData.experience2}</div>
+                <div className="about-heading-1">
+                  {portfolioData.experience2}
+                </div>
                 <Slide direction="right">
                   <span className="detailss">{item.details}</span>
                 </Slide>
@@ -85,11 +63,11 @@ const About = () =>{
           <>
             <div className="container-reverse">
               <div className="image-container-reverse">
-                  <img alt="" src={item.image} />
+                <img alt="" src={item.image} />
               </div>
               <div className="content-container">
                 <div className="about-heading-1">
-                 {portfolioData.experience3}
+                  {portfolioData.experience3}
                 </div>
                 <Slide direction="left">
                   <span className="detailss">{item.details}</span>
@@ -101,6 +79,6 @@ const About = () =>{
       </div>
     </>
   );
-}
+};
 
 export default About;

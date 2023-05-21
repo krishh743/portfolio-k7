@@ -101,9 +101,15 @@ iframe {
         background-color: #433c61;
     }
 
+    .address-value {
+margin-left: 5px;
+color: var(--primary-grey-color)
+    }
+
     .address-key,
     .address-value {
         font-size: 1rem;
+
     }
 
     .address-section {

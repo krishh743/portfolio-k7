@@ -135,10 +135,10 @@ export const skillsData = [
 export const aboutDetailsRows1 = [
   {
     image: Empro2,
-    image2:Empro1,
+    image2: Empro1,
     details:
-      " Lorem ipsum dolor sit amet consecteturadipisicing elitDoloremque tenetur debitis ipsa totam inventore, nisi, temporibusquisquam molestiae deserunt error natus eum maiores modi odit cupiditate dignissimos ut sed est.",
-    title: "InterMediate Education",
+      "",
+    title: "Intermediate Education",
   },
 ];
 
@@ -147,7 +147,7 @@ export const aboutDetailsRows = [
     image: Collage1,
 image1:Collage2,
     details:
-      " Lorem ipsum dolor sit amet consecteturadipisicing elitDoloremque tenetur debitis ipsa totam inventore, nisi, temporibusquisquam molestiae deserunt error natus eum maiores modi odit cupiditate dignissimos ut sed est.",
+      "I graduate (B.tech) from Ambalika Institute Of Management and Technology Lucknow (AKTU). My stream was Information Technology during (2017-2021).",
     title: "InterMediate Education",
   },
 ];
@@ -157,7 +157,7 @@ export const aboutDetailsRowsReverse = [
     image: Mjrp,
     image1: Collage2,
     details:
-      " Lorem ipsum dolor sit amet consecteturadipisicing elitDoloremque tenetur debitis ipsa totam inventore, nisi, temporibusquisquam molestiae deserunt error natus eum maiores modi odit cupiditate dignissimos ut sed est.",
+      " I Completed Intermediate between (2015-17) in MJRP Public School Ghazipur ,UP. Here i studied class 6 to 12th.",
     title: "InterMediate Education",
   },
 ];

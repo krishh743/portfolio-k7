@@ -1,6 +1,5 @@
 h2 {
     font-family: sans-serif;
-    /* color: #228B22; */
     text-align: center;
     font-size: 2.4rem;
     max-width: 550px;
@@ -27,6 +26,17 @@ h2:after {
     right: 0;
     top: 50%;
     position: absolute;
+}
+
+.about-page{
+height:auto;
+background-color: #433c61;
+padding: 20px;
+transform: translateZ(0);
+
+}
+.about-main-heading{
+text-align: center;
 }
 
 .about-heading {
@@ -149,6 +159,11 @@ border-radius: 2%;
 padding: 8vh;
 }
 
+.detailss,
+.content-section span {
+    color: var(--primary-grey-color);
+  
+}
 
 @media (max-width: 768px) {
   .image-container,
@@ -223,6 +238,7 @@ margin:0;
 
 .detailss,.content-section span{
 font-size: 1rem;
+color:var(--primary-grey-color);
 /* text-align: center !important; */
 /* color: white; */
 /* line-height:0 !important; */
