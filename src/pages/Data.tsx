@@ -27,14 +27,16 @@ import next from "../assets/images/next.png";
 
 export const professionalProject = [
   {
+    id:1,
     heading: "HOABL",
     image: hoabl,
     hoverText: "HOABL",
     techStack: "Reactjs,Typescript,Html,Css,Nodejs,Git,Material UI,Jira",
     description:
-      "This was my First Project (Feb 2022 to june 2022) and kind of real state project in which customer can sale and buy their plots and lands. here i was working in admin module and this admin module manage by only project owner and there is admin and super admin can manages this application.",
+      "This was my First Project (Feb 2022 to june 2022) and kind of real state project in which customer can sale and buy their plots and lands. here i was working in admin module and this admin module manage by only project owner and there is admin and super admin can manages this application.In hoabl poject is for android ,ios and customer web apps also deceloped.",
   },
   {
+    id:2,
     heading: "IndusInd Bank",
     image: IndusInd,
     hoverText: "IndusInd Bank",
@@ -42,6 +44,7 @@ export const professionalProject = [
       "This was my Second Porject (june 2022 to march 2023). it is from IndusInd Bank project here they will provide many kind of loans like Car Loan, Bike Loan, Used Car Loan, Refinance and aggregator also providing by Bank. Here is login page and addresses ,verifications of pan, email, and banks accounts, steppers for application progress. here is also admin module handle by bank executives.",
   },
   {
+    id:3,
     heading: "Jaypore",
     image: Jaypore,
     hoverText: "Jaypore",
@@ -49,6 +52,7 @@ export const professionalProject = [
       "I was worked in this project during second project (IndusInd Bank), approximatly 1 months 15 days and This is kind E-commerce website only static pages i was developed and here people can buy facy dresses and traditional clothes for mens and womens also. here is so many categories for shoping and login and signup page for customers spaces to handle profile and shopping details.",
   },
   {
+    id:4,
     heading: "SEKERON",
     image: Sekeron,
     hoverText: "krishna",
@@ -59,6 +63,7 @@ export const professionalProject = [
 
 export const personalProject = [
   {
+    id:1,
     heading: "Wikipedia Search Application",
     image: wiki,
     hoverText: "Wikipedia Application",
@@ -66,13 +71,15 @@ export const personalProject = [
       "This is my personal project where user can search any blogs or key point and result will show below that is sets of suggestion related to user input and if user click/choose any result it will hit and redirect to wikipedia page as response. i was took one week for this project.",
   },
   {
+    id:2,
     heading: "Crud Operation Appication",
     image: crud,
     hoverText: "Crud Operation",
     description:
-      "It is application where user can create, delete, view, update/edit data in table. i took 2 week for this application by using react and redux.",
+      "It is CRUD(Create,Read,Update,Delete) application where user can create, delete, view, update/edit data in table.there are 4 buttons to handle these 4 operations and i used here json server for database. i took 2 week for this application by using react and redux. ",
   },
   {
+    id:3,
     heading: "My Website",
     image: port,
     hoverText: "Portfolio",

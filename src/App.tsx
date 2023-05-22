@@ -12,6 +12,7 @@ import ContactPage from "pages/contact-page/ContactPage";
 import PageNotFound from "components/page-not-found/PageNotFound";
 import {useEffect, useRef} from "react";
 import Navbar from "pages/ṇavbar/NavBar";
+import ScrollPages from "pages/scroll-page/ScrollPages";
 
 function App() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function App() {
   return (
     <ThemeProvider theme={CustomTheme}>
       <Navbar />
+<ScrollPages/>
       <div id="home">
         <Home />
       </div>

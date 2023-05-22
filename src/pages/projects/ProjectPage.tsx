@@ -1,8 +1,5 @@
 import FormFieldContainer from "components/form-field-container/FormFieldContainer";
-import {
-  Button,
-  Stack,
-} from "@mui/material";
+import {Button, Stack} from "@mui/material";
 import styles from "./ProjectPage.module.css";
 import {personalProject, professionalProject} from "pages/Data";
 import {experimentalStyled as styled} from "@mui/material/styles";
@@ -46,7 +43,42 @@ const OverlayText = styled("span")({
 });
 
 const ProjectPage = () => {
+  const handleViewButtonClick = (project: any) => {
+    if (project.type === "professional") {
+      console.log("Response from Professional Project", project.id);
+    } else if (project.type === "personal") {
+      console.log("Response from Personal Project", project.id);
+if(project.id === 3){
+window.open(
+  "https://www.jaypore.com/?gclid=CjwKCAjwpayjBhAnEiwA-7ena_FuyEZ9ue3JEvuRdWJjMi8SmTaNlXqebJm4I85VXnaJju4nbqPG1BoC2CwQAvD_BwE"
+);
+}
+    }
+  };
 
+  const handleSourceButtonClick = (project: any) => {
+    if (project.type === "professional") {
+      if (project.id === 1) {
+        window.open("https://github.com/krishh743/WIKIPEDIA-APP");
+      }
+      if (project.id === 2) {
+        window.open("https://github.com/krishh743/CRUD_PROJECT");
+      }
+      if (project.id === 3) {
+        window.open("https://github.com/krishh743/portfolio-k7");
+      }
+    }
+  };
+
+  const handlePersonalProjectView = (pproject: any) => {
+    if (pproject.type === "professional") {
+      if (pproject.id === 1) {
+        window.open("https://krishh743.github.io/WIKIPEDIA-APP/");
+      }
+      if (pproject.id === 2) {
+      }
+    }
+  };
   return (
     <div className={styles["project-body"]}>
       <FormFieldContainer children={"Professional Projects"} />
@@ -89,10 +121,19 @@ const ProjectPage = () => {
                       },
                     }}
                   >
-                    <Button className="secondary-btn">
+                    <Button
+                      className="secondary-btn"
+                      onClick={() =>
+                        handleViewButtonClick({type: "personal", id: item.id})
+                      }
+                    >
                       {portfolioData.viewBtn}
                     </Button>
-                    <Button className="secondary-btn">
+                    <Button
+                      className="secondary-btn"
+                      disabled
+                      onClick={() => handleSourceButtonClick(item)}
+                    >
                       {portfolioData.sourceBtn}
                     </Button>
                   </Stack>
@@ -144,10 +185,24 @@ const ProjectPage = () => {
                       },
                     }}
                   >
-                    <Button className="secondary-btn">
+                    <Button
+                      className="secondary-btn"
+                      onClick={() =>
+                        handlePersonalProjectView({
+                          type: "professional",
+                          id: item.id,
+                        })
+                      }
+                    >
                       {portfolioData.viewBtn}
                     </Button>
-                    <Button className="secondary-btn">
+                    <Button
+                      className="secondary-btn"
+                      onClick={() => handleSourceButtonClick({
+                          type: "professional",
+                          id: item.id,
+                        })}
+                    >
                       {portfolioData.sourceBtn}
                     </Button>
                   </Stack>
@@ -159,6 +214,5 @@ const ProjectPage = () => {
       </Box>
     </div>
   );
-}
-
+};
 export default ProjectPage;
