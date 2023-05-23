@@ -21,6 +21,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import {portfolioData} from "resources/cms";
+import {Link} from "react-router-dom";
 
 interface FormData {
   firstName: string;
@@ -108,7 +109,7 @@ const ContactPage = () => {
         )
         .then(
           (response) => {
-            console.log("Email sent successfully!", response);
+            // console.log("Email sent successfully!", response);
             toast.success("Email sent successfully!");
             resetForm();
           },
@@ -139,6 +140,10 @@ const ContactPage = () => {
   const handleButtonClick = (event: any) => {
     handleSubmit(event);
   };
+
+// const handleWebsit = () => {
+// window.open("www.google.com")
+// }
 
   return (
     <>
@@ -330,7 +335,19 @@ const ContactPage = () => {
                     {portfolioData.website}
                   </span>
                   <span className={styles["address-value"]}>
-                    {portfolioData.websiteLink}
+                    <a
+                      href="https://myhospital-app.netlify.app"
+                      target="_blank"
+                      style={{
+                        cursor: "pointer",
+                        color: "blue",
+                        margin: "0px",
+                        padding: "0px",
+                        fontSize:"1rem"
+                      }}
+                    >
+                      {portfolioData.websiteLink}
+                    </a>
                   </span>
                 </Stack>
               </Stack>

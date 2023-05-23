@@ -7,7 +7,7 @@ const urlsToChache = ["index.html", "offline.html"];
 this.addEventListener('install',(event)=>{
 event.waitUntill(
 catches.open(catche_name).then((cache)=>{
-console.log("open chache")
+// console.log("open chache")
 return cache.addAll(urlsToChache);
 }))
 })

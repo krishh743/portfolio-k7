@@ -37,7 +37,6 @@ const ImageOverlay = styled("div")({
   },
 });
 
-
 const OverlayText = styled("span")({
   color: "#1D3557",
   fontSize: "2.4rem",
@@ -47,14 +46,14 @@ const OverlayText = styled("span")({
 const ProjectPage = () => {
   const handleViewButtonClick = (project: any) => {
     if (project.type === "professional") {
-      console.log("Response from Professional Project", project.id);
+      // console.log("Response from Professional Project", project.id);
     } else if (project.type === "personal") {
-      console.log("Response from Personal Project", project.id);
-if(project.id === 3){
-window.open(
-  "https://www.jaypore.com/?gclid=CjwKCAjwpayjBhAnEiwA-7ena_FuyEZ9ue3JEvuRdWJjMi8SmTaNlXqebJm4I85VXnaJju4nbqPG1BoC2CwQAvD_BwE"
-);
-}
+      // console.log("Response from Personal Project", project.id);
+      if (project.id === 3) {
+        window.open(
+          "https://www.jaypore.com/?gclid=CjwKCAjwpayjBhAnEiwA-7ena_FuyEZ9ue3JEvuRdWJjMi8SmTaNlXqebJm4I85VXnaJju4nbqPG1BoC2CwQAvD_BwE"
+        );
+      }
     }
   };
 
@@ -127,7 +126,6 @@ window.open(
                   >
                     <Button
                       className="secondary-btn"
-                    
                       onClick={() =>
                         handleViewButtonClick({type: "personal", id: item.id})
                       }
@@ -135,7 +133,6 @@ window.open(
                       {portfolioData.viewBtn}
                     </Button>
                     <Button
-                      
                       className="secondary-btn"
                       disabled
                       onClick={() => handleSourceButtonClick(item)}

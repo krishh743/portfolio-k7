@@ -34,6 +34,7 @@ function Home() {
                 <span className={styles["home-second-text"]}>
                   {portfolioData.role}
                 </span>
+                
               </Slide>
             </Stack>
             <Fade delay={800}>

@@ -21,12 +21,15 @@ export const portfolioData = {
     //home page data for mobile
     Hi: "Hi ,",
     nameForMobile: "I'm Krishna Kumar (KK)",
-    objectiveMob: "A passionate Frontend Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.",
+    // objectiveMob: "A passionate Frontend Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.",
+
+    objectiveMob:"Frontend developer having expertise in frontend development and highly motivated individual dedicated to writing clear, concise, robust code that works. I like creating products that either have fun and nifty features or solve a genuine problem for people.",
 
     // about page 
     experience1: "1. Professional Experience",
     experience2: "2. Graduation (2017-2021)",
     experience3: "2. Intermediate (2012-2017)",
+
 
     //project page
     viewBtn: "View Live",
@@ -47,6 +50,8 @@ export const portfolioData = {
     email : " Email :",
     emailData : " krishnakushwaha743@gmail.com",
     website : " Website :",
-    websiteLink : " www.example.com"
+    websiteLink: "https://myhospital-app.netlify.app",
+    websiteLink2: "https://krishnakk.netlify.app"
+
 }
 
