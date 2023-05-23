@@ -84,7 +84,7 @@ export const personalProject = [
     image: port,
     hoverText: "Portfolio",
     description:
-      "This is my latest project, duration i developed (3 Week). Here anyone can know about me and my all eduactional, experiences, skills ,contact information. and also contact me by socail media plateforms.",
+      "This is my latest project that is portfolio, duration i developed (3 Week). Here anyone can know about me and my all eduactional, experiences, skills ,contact information. and also contact me by socail media plateforms. This is PWA Application.",
   },
 ];
 

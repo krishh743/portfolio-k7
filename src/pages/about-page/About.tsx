@@ -5,7 +5,7 @@ import {
   aboutDetailsRows1,
   aboutDetailsRowsReverse,
 } from "pages/Data";
-import {Rotate, Slide} from "react-awesome-reveal";
+import {Fade, Rotate, Slide} from "react-awesome-reveal";
 import {portfolioData} from "resources/cms";
 
 const About = () => {
@@ -28,9 +28,9 @@ const About = () => {
               </div>
               <div className="content-section">
                 <div className="image-two">
-                  <Slide direction="down">
+                  <Fade>
                     <img src={item.image2} alt="" />
-                  </Slide>
+                  </Fade>
                 </div>
                 <Slide direction="down">
                   <span className="detailss">{item.details}</span>

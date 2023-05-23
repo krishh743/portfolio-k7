@@ -34,10 +34,11 @@ return caches.delete(cacheName)
 
 })
 
-this.addEventListener("push", (event) => {
+self.addEventListener("push", (event) => {
     const title = "Push Notification";
+    const message = "You can download this wesite as a app";
     const options = {
-        body: event.data.text(),
+        body: message,
         icon: "logo192.png",
     };
     event.waitUntil(self.registration.showNotification(title, options));
@@ -47,31 +48,3 @@ self.addEventListener("notificationclick", (event) => {
     event.notification.close();
     // Add your custom logic here based on the notification click
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

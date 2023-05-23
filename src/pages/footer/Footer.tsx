@@ -10,7 +10,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
-
 const Copyright = () => {
   return (
     <span>
@@ -18,9 +17,9 @@ const Copyright = () => {
       {"2023"}
     </span>
   );
-}
+};
 
- const  StickyFooter = () => {
+const StickyFooter = () => {
   return (
     <>
       <div className={styles["footer-mobile"]}>
@@ -39,14 +38,15 @@ const Copyright = () => {
               py: 3,
               px: 2,
               backgroundColor: "#870046",
+              textAlign: "center",
             }}
           >
-            <Container maxWidth="sm">
-              <Copyright />
-              <AdjustIcon
-                sx={{float: "right", color: "green", fontSize: "40px"}}
-              />
-            </Container>
+            {/* <Container maxWidth="sm"> */}
+            <Copyright /> 😍 KK
+            {/* <AdjustIcon
+                sx={{float: "right", color: "green", fontSize: "30px"}}
+              /> */}
+            {/* </Container> */}
           </Box>
         </Box>
       </div>
@@ -109,6 +109,6 @@ const Copyright = () => {
       </div>
     </>
   );
-}
+};
 
 export default StickyFooter;

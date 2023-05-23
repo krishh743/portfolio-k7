@@ -343,7 +343,7 @@ const ContactPage = () => {
                         color: "blue",
                         margin: "0px",
                         padding: "0px",
-                        fontSize:"1rem"
+                        fontSize: "1rem",
                       }}
                     >
                       {portfolioData.websiteLink}
@@ -356,46 +356,48 @@ const ContactPage = () => {
         </Stack>
       </div>
       <div className={styles["social-media-mobile"]}>
-        <ul
-          style={{
-            display: "flex",
-            // flexDirection: "row",
-            justifyContent: "space-evenly",
-            listStyleType: "none",
-            margin: 0,
-            padding: "15px",
-          }}
-        >
-          <li>
-            <a target="_blank" href="https://github.com/krishh743">
-              <GitHubIcon sx={{color: "#000000", fontSize: "30px"}} />
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/krishna-kushwaha-3b99b2187/"
-            >
-              <LinkedInIcon sx={{color: "white", fontSize: "30px"}} />
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://instagram.com/krishna_k___7?igshid=OTk0YzhjMDVlZA=="
-            >
-              <InstagramIcon sx={{color: "pink", fontSize: "30px"}} />
-            </a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/krishna.kushwaha.9421"
-            >
-              <FacebookIcon sx={{color: "lightblue", fontSize: "30px"}} />
-            </a>
-          </li>
-        </ul>
+        <Fade cascade damping={0.9}>
+          <ul
+            style={{
+              display: "flex",
+              // flexDirection: "row",
+              justifyContent: "space-evenly",
+              listStyleType: "none",
+              margin: 0,
+              padding: "15px",
+            }}
+          >
+            <li>
+              <a target="_blank" href="https://github.com/krishh743">
+                <GitHubIcon sx={{color: "#000000", fontSize: "30px"}} />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/krishna-kushwaha-3b99b2187/"
+              >
+                <LinkedInIcon sx={{color: "white", fontSize: "30px"}} />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://instagram.com/krishna_k___7?igshid=OTk0YzhjMDVlZA=="
+              >
+                <InstagramIcon sx={{color: "pink", fontSize: "30px"}} />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/krishna.kushwaha.9421"
+              >
+                <FacebookIcon sx={{color: "white", fontSize: "30px"}} />
+              </a>
+            </li>
+          </ul>
+        </Fade>
       </div>
     </>
   );

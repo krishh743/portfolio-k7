@@ -49,6 +49,11 @@ const ProjectPage = () => {
       // console.log("Response from Professional Project", project.id);
     } else if (project.type === "personal") {
       // console.log("Response from Personal Project", project.id);
+      if (project.id === 2) {
+        window.open(
+          "https://www.indusind.com/in/en/personal/loans/vehicle-loan.html"
+        );
+      }
       if (project.id === 3) {
         window.open(
           "https://www.jaypore.com/?gclid=CjwKCAjwpayjBhAnEiwA-7ena_FuyEZ9ue3JEvuRdWJjMi8SmTaNlXqebJm4I85VXnaJju4nbqPG1BoC2CwQAvD_BwE"
@@ -77,6 +82,9 @@ const ProjectPage = () => {
         window.open("https://krishh743.github.io/WIKIPEDIA-APP/");
       }
       if (pproject.id === 2) {
+      }
+      if (pproject.id === 3) {
+        window.open("https://krishnakushwahak.netlify.app/");
       }
     }
   };
