@@ -37,6 +37,7 @@ export const portfolioData = {
     certificate: "Certifications",
 
     //contact page
+    contactSubHeading:"Feel Free To Contact me.",
     sendBtn: " Send Message",
     address : " Address",
     address1 : " Address :",

@@ -1,37 +1,46 @@
+export const isValidEmailId = (value:any) =>{
+return !/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  .test(value);
+}
 
-const isMobileNumberValid = (ph: string) => {
-  const regX = new RegExp(/^((?!(0))[0-9]{10})$/);
-  return regX.test(ph);
+export const isValidMobileNumber = (value:any) => {
+return !/^\d{10}$/.test(value);
+}
+
+export const checkValidEMAILFormat = (value:any) => {
+  return value
+    ? /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i.test(
+        value
+      )
+    : "";
 };
 
-const isNumberField = (num: string) => {
-  const regX = new RegExp(/^\d*[.]?\d*$/);
-  return regX.test(num.toString());
+export const onlyNumbersAccept = (value:any) => {
+  return value ? value.replace(/\D/g, "") : "";
 };
 
-const isEmailValid = (email: string) => {
-  const regX = new RegExp(
-    /^[a-zA-Z0-9_]+(\.[_a-zA-Z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/
-  );
-  return regX.test(email);
+
+export const phoneNumberFormat = (value:any) => {
+  let format = value
+    ?.toString()
+    ?.match(/.{1,5}/g)
+    ?.join(" ");
+  return format;
 };
 
-const isValidPassword = (password: string) => {
-  const regX = new RegExp(
-    /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/
-  );
-
-  return regX.test(password);
+export const removeInvaildCharFromAddress = (value:any) => {
+  return value ? value.replace(/[^A-Za-z0-9.,_/-\s]/gi, "") : "";
 };
 
-const isEmpty = (str: string) => {
-  return str.length === 0 ? true : false;
+export const acceptAlphabetNumber = (value:any) => {
+  return value ? value.replace(/[^A-Za-z0-9 ]+/, "") : "";
 };
 
-export {
-  isMobileNumberValid,
-  isEmailValid,
-  isEmpty,
-  isNumberField,
-  isValidPassword,
+export const capitailizeWord = (str:any) => {
+  return str?.length ? str.charAt(0).toUpperCase() + str.slice(1) : "";
+};
+
+export const capitaizeSentence = (str:any) => {
+  let result = str?.split(" ")?.map((each:any) => capitailizeWord(each));
+  return result?.join(" ") || "";
 };

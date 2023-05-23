@@ -63,6 +63,15 @@ iframe {
 .form-fields {
     width: 80vh;
 }
+ .address-value {
+     margin-left: 5px;
+     color: var(--primary-grey-color)
+ }
+
+
+.social-media-mobile{
+display: none;
+}
 
 @media only screen and (max-width: 767px) {
     .main-form-body {
@@ -130,6 +139,11 @@ iframe {
         margin-left: 0 !important;
         margin-top: 20px;
     }
+
+.social-media-mobile {
+    display: block;
+    background-color: #433c61;
+}
 }
 
 p {

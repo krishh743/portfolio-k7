@@ -38,10 +38,17 @@ body {
     height: 45px;
     background-color: #870046;
     font-size: 1rem;
+padding: 10px !important;
 }
 
 .secondary-btn:hover {
     background-color: #870046;
+}
+
+@media only screen and (max-width: 767px) {
+.secondary-btn {
+        padding: 0 !important;
+    }
 }
 
  

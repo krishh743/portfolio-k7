@@ -22,7 +22,7 @@ function App() {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({behavior: "smooth"});
-      window.scroll(0, element.offsetTop - 100);
+      window.scroll(0, element.offsetTop - 130);
     }
   }, [location]);
 

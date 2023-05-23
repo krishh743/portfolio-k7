@@ -6,7 +6,7 @@ import {experimentalStyled as styled} from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import {Slide} from "react-awesome-reveal";
+import {Slide, Zoom} from "react-awesome-reveal";
 import {portfolioData} from "resources/cms";
 
 const Item = styled(Paper)(({theme}) => ({
@@ -28,16 +28,18 @@ const ImageOverlay = styled("div")({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  backgroundColor: "rgba(0, 0, 0, 0.4)",
+  backgroundColor: "rgba(24, 14, 48, 0.4)",
   opacity: 0,
   transition: "opacity 0.6s ease",
   "&:hover": {
     opacity: 1,
+    transform: "scale(1.2)", // Add a scale transformation for zoom effect
   },
 });
 
+
 const OverlayText = styled("span")({
-  color: "#fff",
+  color: "#1D3557",
   fontSize: "2.4rem",
   fontWeight: "bold",
 });
@@ -96,6 +98,7 @@ window.open(
               <Item>
                 <div className={styles["image-section"]}>
                   <img src={item.image} alt="project" />
+
                   <ImageOverlay>
                     <OverlayText>{item.hoverText}</OverlayText>
                   </ImageOverlay>
@@ -116,6 +119,7 @@ window.open(
                     marginTop="15px"
                     marginBottom="15px"
                     sx={{
+                      // margin:"0",
                       "@media (max-width:768px)": {
                         paddingInline: "15px",
                       },
@@ -123,6 +127,7 @@ window.open(
                   >
                     <Button
                       className="secondary-btn"
+                    
                       onClick={() =>
                         handleViewButtonClick({type: "personal", id: item.id})
                       }
@@ -130,6 +135,7 @@ window.open(
                       {portfolioData.viewBtn}
                     </Button>
                     <Button
+                      
                       className="secondary-btn"
                       disabled
                       onClick={() => handleSourceButtonClick(item)}
@@ -198,10 +204,12 @@ window.open(
                     </Button>
                     <Button
                       className="secondary-btn"
-                      onClick={() => handleSourceButtonClick({
+                      onClick={() =>
+                        handleSourceButtonClick({
                           type: "professional",
                           id: item.id,
-                        })}
+                        })
+                      }
                     >
                       {portfolioData.sourceBtn}
                     </Button>

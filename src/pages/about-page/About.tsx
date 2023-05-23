@@ -28,7 +28,7 @@ const About = () => {
               </div>
               <div className="content-section">
                 <div className="image-two">
-                  <Slide direction="right">
+                  <Slide direction="down">
                     <img src={item.image2} alt="" />
                   </Slide>
                 </div>

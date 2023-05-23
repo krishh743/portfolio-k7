@@ -19,10 +19,10 @@ const FormFieldContainer = (props: ReactNodeProps) => {
         },
       }}
       component={"section"}
-      padding={"1.5rem"}
+      padding={"2rem"}
       textAlign={"center"}
       fontSize={"2rem"}
-      color={"black"}
+      color={"white"}
       {...props}
     >
       {children}

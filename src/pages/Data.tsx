@@ -27,7 +27,7 @@ import next from "../assets/images/next.png";
 
 export const professionalProject = [
   {
-    id:1,
+    id: 1,
     heading: "HOABL",
     image: hoabl,
     hoverText: "HOABL",
@@ -36,7 +36,7 @@ export const professionalProject = [
       "This was my First Project (Feb 2022 to june 2022) and kind of real state project in which customer can sale and buy their plots and lands. here i was working in admin module and this admin module manage by only project owner and there is admin and super admin can manages this application.In hoabl poject is for android ,ios and customer web apps also deceloped.",
   },
   {
-    id:2,
+    id: 2,
     heading: "IndusInd Bank",
     image: IndusInd,
     hoverText: "IndusInd Bank",
@@ -44,7 +44,7 @@ export const professionalProject = [
       "This was my Second Porject (june 2022 to march 2023). it is from IndusInd Bank project here they will provide many kind of loans like Car Loan, Bike Loan, Used Car Loan, Refinance and aggregator also providing by Bank. Here is login page and addresses ,verifications of pan, email, and banks accounts, steppers for application progress. here is also admin module handle by bank executives.",
   },
   {
-    id:3,
+    id: 3,
     heading: "Jaypore",
     image: Jaypore,
     hoverText: "Jaypore",
@@ -52,10 +52,10 @@ export const professionalProject = [
       "I was worked in this project during second project (IndusInd Bank), approximatly 1 months 15 days and This is kind E-commerce website only static pages i was developed and here people can buy facy dresses and traditional clothes for mens and womens also. here is so many categories for shoping and login and signup page for customers spaces to handle profile and shopping details.",
   },
   {
-    id:4,
+    id: 4,
     heading: "SEKERON",
     image: Sekeron,
-    hoverText: "krishna",
+    hoverText: "SEKERON",
     description:
       "Sekeron is my 4th one project currently i an working now,this is kind of social media application where poeple can share post , images , video also like Instagram. here i  am working in admin module application in which login page, sign up page, customer management ,project management ,settings, blog management, FAQ, etc. ",
   },
@@ -144,8 +144,8 @@ export const aboutDetailsRows1 = [
     image: Empro2,
     image2: Empro1,
     details:
-      "",
-    title: "Intermediate Education",
+      "I Joined Emproto Technologies Pvt. Ltd. as a Software Engineer in Bangalore, India. and my DOJ was 1 January 2022 to Current date. Here I handle Fronted development.",
+    title: "Professional Experience",
   },
 ];
 

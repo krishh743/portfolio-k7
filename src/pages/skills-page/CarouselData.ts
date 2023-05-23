@@ -115,7 +115,7 @@ export const carouselData = [
   {
     mediumText: "HTML TRAINING",
     smallText:
-      "I completed HTML course from LinkedIn Plateform. total course duration 3hrs and i learn how to structure a websire by using html",
+      "I completed HTML course from LinkedIn Plateform. total course duration 3hrs and i learn how to structure a website by using html",
     image: CRT20,
   },
   {

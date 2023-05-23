@@ -9,7 +9,17 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 import {Fade} from "react-awesome-reveal";
-import {isEmailValid} from "utils/ValidationUtils";
+import {
+  capitaizeSentence,
+  isValidEmailId,
+  isValidMobileNumber,
+  onlyNumbersAccept,
+  phoneNumberFormat,
+} from "utils/ValidationUtils";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import {portfolioData} from "resources/cms";
 
 interface FormData {
@@ -27,7 +37,7 @@ interface FormData {
   };
 }
 
-const ContactPage = () =>{
+const ContactPage = () => {
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -55,30 +65,26 @@ const ContactPage = () =>{
     };
 
     if (!formData.firstName.trim()) {
-      errors.firstName = "First name is required!";
+      errors.firstName = "First name is required !";
     }
 
     if (!formData.lastName.trim()) {
-      errors.lastName = "Last name is required!";
+      errors.lastName = "Last name is required !";
     }
 
     if (!formData.email.trim()) {
-      errors.email = "Email is required!";
-    } else if (isEmailValid(formData.email)
-    ) {
-      errors.email = "Invalid email format!";
+      errors.email = "Email is required !";
+    } else if (isValidEmailId(formData.email)) {
+      errors.email = "Invalid email format !";
     }
-
     if (!formData.mobileNumber.trim()) {
-      errors.mobileNumber = "Mobile number is required!";
-    } else if (
-      /^((?!(0))[0-9]{10})$/.test(formData.mobileNumber)
-    ) {
-      errors.mobileNumber = "Invalid mobile number!";
+      errors.mobileNumber = "Mobile number is required !";
+    } else if (isValidMobileNumber(formData.mobileNumber)) {
+      errors.mobileNumber = "mobile number must be 10 numbers !";
     }
 
     if (!formData.message.trim()) {
-      errors.message = "Message is required!";
+      errors.message = "Message is required !";
     }
 
     setFormData({...formData, errors});
@@ -92,13 +98,13 @@ const ContactPage = () =>{
         message: formData.message,
       };
 
-// email messaging services
+      // email messaging services
       emailjs
         .send(
-          "service_a31zemv",//service id
-          "template_ywf8axd",//templates id
+          "service_a31zemv", //service id
+          "template_ywf8axd", //templates id
           submittedData,
-          "wVten6qByzC-uShOr"//account id
+          "wVten6qByzC-uShOr" //account id
         )
         .then(
           (response) => {
@@ -140,10 +146,14 @@ const ContactPage = () =>{
         <div className={styles["form-body"]}>
           <Stack flexDirection={"column"}>
             <Stack>
-              <span className={styles["contact-text"]}>Contact</span>
+              <span className={styles["contact-text"]}>
+                {portfolioData.CONTACT}
+              </span>
             </Stack>
             <Stack>
-              <span className={styles["contact-subtext"]} >Feel Free To Contact Us.</span>
+              <span className={styles["contact-subtext"]}>
+                {portfolioData.contactSubHeading}
+              </span>
             </Stack>
             <form onSubmit={handleSubmit}>
               <div className={styles["form-fields"]}>
@@ -161,7 +171,7 @@ const ContactPage = () =>{
                     label="First Name"
                     variant="standard"
                     name="firstName"
-                    value={formData.firstName}
+                    value={capitaizeSentence(formData.firstName)}
                     onChange={(event) =>
                       setFormData({
                         ...formData,
@@ -177,7 +187,7 @@ const ContactPage = () =>{
                     label="Last Name"
                     name="lastName"
                     variant="standard"
-                    value={formData.lastName}
+                    value={capitaizeSentence(formData.lastName)}
                     onChange={(event) =>
                       setFormData({
                         ...formData,
@@ -211,7 +221,8 @@ const ContactPage = () =>{
                   label="Mobile Number"
                   name="mobileNumber"
                   variant="standard"
-                  value={formData.mobileNumber}
+                  // type="Number"
+                  value={onlyNumbersAccept(formData.mobileNumber)}
                   onChange={(event) =>
                     setFormData({
                       ...formData,
@@ -228,7 +239,7 @@ const ContactPage = () =>{
                   name="message"
                   multiline
                   rows={4}
-                  value={formData.message}
+                  value={capitaizeSentence(formData.message)}
                   onChange={(event) =>
                     setFormData({
                       ...formData,
@@ -277,7 +288,9 @@ const ContactPage = () =>{
             <Stack flexDirection={"column"}>
               <RoomIcon sx={{color: "#FF0000", fontSize: "35px"}} />
               <Stack flexDirection={"row"} whiteSpace={"nowrap"}>
-                <span className={styles["address-key"]}>{portfolioData.address1}</span>
+                <span className={styles["address-key"]}>
+                  {portfolioData.address1}
+                </span>
                 <span className={styles["address-value"]}>
                   {portfolioData.addressData}
                 </span>
@@ -287,7 +300,9 @@ const ContactPage = () =>{
               <Stack flexDirection={"column"}>
                 <PhoneIcon sx={{color: "", fontSize: "35px"}} />
                 <Stack flexDirection={"row"}>
-                  <span className={styles["address-key"]}>{portfolioData.phone}</span>
+                  <span className={styles["address-key"]}>
+                    {portfolioData.phone}
+                  </span>
                   <span className={styles["address-value"]}>
                     {portfolioData.phoneData}
                   </span>
@@ -298,7 +313,9 @@ const ContactPage = () =>{
               <Stack flexDirection={"column"}>
                 <EmailIcon sx={{color: "", fontSize: "35px"}} />
                 <Stack flexDirection={"row"}>
-                  <span className={styles["address-key"]}>{portfolioData.email}</span>
+                  <span className={styles["address-key"]}>
+                    {portfolioData.email}
+                  </span>
                   <span className={styles["address-value"]}>
                     {portfolioData.emailData}
                   </span>
@@ -309,9 +326,11 @@ const ContactPage = () =>{
               <Stack flexDirection={"column"}>
                 <LanguageIcon sx={{color: "", fontSize: "35px"}} />
                 <Stack flexDirection={"row"}>
-                  <span className={styles["address-key"]}>{portfolioData.website}</span>
+                  <span className={styles["address-key"]}>
+                    {portfolioData.website}
+                  </span>
                   <span className={styles["address-value"]}>
-                  {portfolioData.websiteLink}
+                    {portfolioData.websiteLink}
                   </span>
                 </Stack>
               </Stack>
@@ -319,8 +338,50 @@ const ContactPage = () =>{
           </Fade>
         </Stack>
       </div>
+      <div className={styles["social-media-mobile"]}>
+        <ul
+          style={{
+            display: "flex",
+            // flexDirection: "row",
+            justifyContent: "space-evenly",
+            listStyleType: "none",
+            margin: 0,
+            padding: "15px",
+          }}
+        >
+          <li>
+            <a target="_blank" href="https://github.com/krishh743">
+              <GitHubIcon sx={{color: "#000000", fontSize: "30px"}} />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/krishna-kushwaha-3b99b2187/"
+            >
+              <LinkedInIcon sx={{color: "white", fontSize: "30px"}} />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://instagram.com/krishna_k___7?igshid=OTk0YzhjMDVlZA=="
+            >
+              <InstagramIcon sx={{color: "pink", fontSize: "30px"}} />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/krishna.kushwaha.9421"
+            >
+              <FacebookIcon sx={{color: "lightblue", fontSize: "30px"}} />
+            </a>
+          </li>
+        </ul>
+      </div>
     </>
   );
-}
+};
 
 export default ContactPage;
