@@ -44,7 +44,7 @@ export const portfolioData = {
     sendBtn: " Send Message",
     address : " Address",
     address1 : " Address :",
-    addressData : " Ghazipur, Nonhara,233303 U.P, Near Varanasi (Banaras, Kashi)",
+    addressData : " Ghazipur, Nonhara,233303 U.P,Varanasi (Banaras)",
     phone : " Phone :",
     phoneData : " +91 9118575852",
     email : " Email :",
