@@ -7,7 +7,7 @@ import {
 } from "pages/Data";
 import {Fade, Rotate, Slide} from "react-awesome-reveal";
 import {portfolioData} from "resources/cms";
-
+   
 const About = () => {
   return (
     <>
