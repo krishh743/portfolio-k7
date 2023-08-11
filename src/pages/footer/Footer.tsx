@@ -63,7 +63,7 @@ const StickyFooter = () => {
           }}
         >
           <span style={{color: "white"}}>
-            © 2023 by Krishna | All Rights Reserved.
+          Copyright  © 2023 by Krishna | All Rights Reserved.
           </span>
           <ul
             style={{

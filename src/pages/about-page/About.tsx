@@ -22,9 +22,9 @@ const About = () => {
             <div className="about-heading">{portfolioData.experience1}</div>
             <div className="image-section" key={index}>
               <div className="row-image">
-                <Slide>
+                {/* <Slide> */}
                   <img alt="" src={item.image} />
-                </Slide>
+                {/* </Slide> */}
               </div>
               <div className="content-section">
                 <div className="image-two">
