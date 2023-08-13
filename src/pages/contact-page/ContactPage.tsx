@@ -291,7 +291,7 @@ const ContactPage = () => {
         >
           <Fade cascade damping={0.9}>
             <Stack flexDirection={"column"}>
-              <RoomIcon sx={{color: "#FF0000", fontSize: "35px"}} />
+              <RoomIcon sx={{color: "blue", fontSize: "35px"}} />
               <Stack flexDirection={"row"} whiteSpace={"nowrap"}>
                 <span className={styles["address-key"]}>
                   {portfolioData.address1}
